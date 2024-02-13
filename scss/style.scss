@@ -10,7 +10,9 @@
 
 //  -----------
 $dark-blue: #242582;
-$dark:#553D67;
+// $dark:#553D67;
+// $dark: #1f1f20;
+$dark: #030303;
 $light-pink:#F64C72;
 $light-brown: #99738E;
 $second-blue:#2F2FA2;
@@ -18,12 +20,25 @@ $second-blue:#2F2FA2;
 $text-white:#FAF9F6;
 
 
+
+// color
+
+$contact-background: $dark;
+$expertise-background: $dark;
+$project-background:$dark;
+$about-background:$dark;
+
 html , body {
     margin: 0;
     padding: 0;
 
+    color: white;
     ul {
         list-style-type: none;
+    }
+
+    .title{
+        font-size: 1.8rem;
     }
 }
 
@@ -60,9 +75,9 @@ html , body {
     width: 100%;
     height: 100vh;
 
-    background-image: url('../image/space.jpg');
-    background-size: contain;
-    background-position: center;
+    background-image: url(../image/background2.jpg);
+    // background-size: contain;
+    // // background-position: center;
     background-repeat: no-repeat;
 
     .hero-page-contianer nav.hero-nav.hide-nav ul{
@@ -116,19 +131,73 @@ html , body {
 
 #about-page{
     width: 100%;
-    height: 100vh;
-    background-color: $light-pink;
-    .about-content-text{
-        padding: 5% 10%;
-       
+    height: 80vh;
+    background-color: $about-background;
+    .about-container{
+        
+        .about-content-text{
+            margin-top: 4%;
+            padding: 5% 5%;
+            border: 2px solid white;
+        }
+        
+        .about-content-img{
+            margin-top: 4%;
+            img{
+                max-width: 600px;
+                filter: blur(1px);
+            }
+        }
+        
     }
+    
 } 
+
+
+#expertisePage {
+    width: 100%;
+    height: 70vh;
+    background-color: $expertise-background;
+    .expertise-container{
+        padding: 3%;
+        .expertise-box-container{
+            padding: 3%;
+
+            .expertise-box{
+                border: 1px solid white;
+                padding-top: 1rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                padding-bottom: 3rem;
+                h3{
+                    margin-bottom: 0.8rem;
+                }
+                .expertise-box-text{
+                    p {
+                        padding-left: 1.2rem;
+                        margin-bottom: 0;
+                        margin-left: 1rem; 
+                        border-left: 1px solid white;
+                    }
+                }
+            }
+
+            .expertise-box:hover{
+                border: 2px solid white;
+                box-shadow: 0px 2px 4px 0px white;
+
+            }
+            
+        }
+    }
+}
+
 
 
 #projectPage{
     width: 100%;
     height: 90vh;
-    background-color: $light-brown;
+    background-color: $project-background;
     position: relative;
     
     .project-section {
@@ -206,7 +275,7 @@ html , body {
                     top: 0; 
                     bottom: 0;
                     background: rgb(0, 0, 0);
-                    background: rgba(0, 0, 0, 0.3); /* Black see-through */
+                    background: rgba(0, 0, 0, 0.5); /* Black see-through */
                     color: #f1f1f1; 
                     width: 100%;
                     transition: .5s ease;   
@@ -218,7 +287,10 @@ html , body {
                     z-index: 1;
                   }
 
-                  
+                .overlay-project:hover{
+                    background-color: rgba(0, 0, 0, 0.6);
+                    box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.4);
+                }  
              }
         }
         
@@ -237,8 +309,8 @@ html , body {
 
 #contact-page{
     width: 100%;
-    height: 100vh;
-    background-color: $second-blue;
+    height: 60vh;
+    background-color: $contact-background;
 }
 
 
@@ -253,18 +325,30 @@ html , body {
         position: sticky;
         top: 0;
         max-height: 100vh;
-        width: 10%;
-        background-color: rgb(31, 31, 32);
+        width: 20%;
+        background-color: #030303;
         color: $text-white;
+        padding-top: 3rem;
         h3 {
             padding: 0.7rem 2rem;
         }
+        .side-bar-chars{
+            display: block;
+            padding-left: 3rem;
+            padding-top: 0.5rem;
+            font-size: 1.8rem;
+    
+        }
     }
+
+    
+
+
 
     .side-bar-content{
         height: 100%;   
-        width: 90%;
+        width: 80%;
 
-
+        
     }
 }

@@ -14,6 +14,7 @@ window.addEventListener('DOMContentLoaded', function(e){
     // button to scroll horziontal project page 
 
     const scrollButtonRight = document.getElementById('slideRight');
+    const scrollButtonLeft = document.getElementById('slideLeft');
     const buttonLeft = document.getElementById('slideLeft');
     const projectSectionOffsetWidth = document.querySelector('.project-section').offsetWidth;
     let widthofSet = document.querySelector('.project-card').offsetWidth;
@@ -27,13 +28,19 @@ window.addEventListener('DOMContentLoaded', function(e){
         }
         if(document.getElementById('project-scroll').scrollLeft > widthofSet){
             // add the left button 
-            document.querySelector('#slideRight').style.display = 'inline';
+            document.querySelector('#slideLeft').style.display = 'inline';
         }
         if(document.getElementById('project-scroll').scrollLeft == 0){
             // remove the left button 
+            document.querySelector('#slideLeft').style.display = 'none';
         }   
       document.getElementById('project-scroll').scrollLeft += widthofSet /2;
     };
+
+    scrollButtonLeft.onclick = function (){
+        console.log('clickRight btn');
+        document.getElementById('project-scroll').scrollLeft -= widthofSet /2;
+    }
     // buttonLeft.onclick = function () {
     //   document.getElementsByClassName('project-wrapper').scrollLeft -= 20;
     // };
@@ -43,7 +50,7 @@ window.addEventListener('DOMContentLoaded', function(e){
     console.log(window.innerHeight);
    const scrollItemList = document.querySelectorAll('.scroll-item');
    console.log(scrollItemList);
-   let div = document.getElementById('print')
+   let div = document.getElementById('print');
    this.window.onscroll = () => {
 
         scrollTopNav();
@@ -56,15 +63,29 @@ window.addEventListener('DOMContentLoaded', function(e){
             let height = item.offsetHeight;
             let top = window.scrollY + height - 100;
             let id = item.getAttribute('id');
-
-           // console.log( id +' top : '+ top.toFixed(2) + "  offset: " + offset + "  height" + height);
-            
+            var paraArray = [];
+            var paraCoverElement = document.createElement('div');
+            // check off set of page and change text            
             if(top >= offset && top < offset + height){
-               // console.log("%c" + id , "background: red;padding: 10px;");
-               // console.log("%c" + id + " =>" + div.textContent , "background: blue;padding: 10px;")
-                div.innerHTML = id
-               
-                
+                var printData = Array.from(item.dataset.name); 
+                div.innerHTML = '';
+                console.log(printData);
+                // add p tag to char
+                printData.forEach(el  =>  {
+                    var paraElement = document.createElement('span');
+                    paraElement.classList.add('side-bar-chars');
+                    console.log(el);
+                    paraElement.innerText += el;
+                    console.log(paraElement)
+                    paraArray.push(paraElement);
+                });
+                // add p tags to div
+                console.log(paraArray);
+                paraArray.forEach(el => {
+                    paraCoverElement.appendChild(el);
+                });
+                // append div
+                div.appendChild(paraCoverElement);
             }
         })
    }

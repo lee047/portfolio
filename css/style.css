@@ -1,9 +1,13 @@
 html, body {
   margin: 0;
   padding: 0;
+  color: white;
 }
 html ul, body ul {
   list-style-type: none;
+}
+html .title, body .title {
+  font-size: 1.8rem;
 }
 
 .small-div-container {
@@ -27,9 +31,7 @@ html ul, body ul {
 #hero-page {
   width: 100%;
   height: 100vh;
-  background-image: url("../image/space.jpg");
-  background-size: contain;
-  background-position: center;
+  background-image: url(../image/background2.jpg);
   background-repeat: no-repeat;
 }
 #hero-page .hero-page-contianer nav.hero-nav.hide-nav ul {
@@ -70,17 +72,58 @@ html ul, body ul {
 
 #about-page {
   width: 100%;
-  height: 100vh;
-  background-color: #F64C72;
+  height: 80vh;
+  background-color: #030303;
 }
-#about-page .about-content-text {
-  padding: 5% 10%;
+#about-page .about-container .about-content-text {
+  margin-top: 4%;
+  padding: 5% 5%;
+  border: 2px solid white;
+}
+#about-page .about-container .about-content-img {
+  margin-top: 4%;
+}
+#about-page .about-container .about-content-img img {
+  max-width: 600px;
+  filter: blur(1px);
+}
+
+#expertisePage {
+  width: 100%;
+  height: 70vh;
+  background-color: #030303;
+}
+#expertisePage .expertise-container {
+  padding: 3%;
+}
+#expertisePage .expertise-container .expertise-box-container {
+  padding: 3%;
+}
+#expertisePage .expertise-container .expertise-box-container .expertise-box {
+  border: 1px solid white;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+}
+#expertisePage .expertise-container .expertise-box-container .expertise-box h3 {
+  margin-bottom: 0.8rem;
+}
+#expertisePage .expertise-container .expertise-box-container .expertise-box .expertise-box-text p {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  border-left: 1px solid white;
+}
+#expertisePage .expertise-container .expertise-box-container .expertise-box:hover {
+  border: 2px solid white;
+  box-shadow: 0px 2px 4px 0px white;
 }
 
 #projectPage {
   width: 100%;
   height: 90vh;
-  background-color: #99738E;
+  background-color: #030303;
   position: relative;
 }
 #projectPage .project-section {
@@ -152,7 +195,7 @@ html ul, body ul {
   top: 0;
   bottom: 0;
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.3); /* Black see-through */
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1;
   width: 100%;
   transition: 0.5s ease;
@@ -163,6 +206,10 @@ html ul, body ul {
   text-align: center;
   z-index: 1;
 }
+#projectPage .project-section .project-wrapper .project-container .overlay-project:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.4);
+}
 #projectPage .left-container {
   margin-top: 1rem;
 }
@@ -172,8 +219,8 @@ html ul, body ul {
 
 #contact-page {
   width: 100%;
-  height: 100vh;
-  background-color: #2F2FA2;
+  height: 60vh;
+  background-color: #030303;
 }
 
 .side-bar-wraper {
@@ -186,16 +233,23 @@ html ul, body ul {
   position: sticky;
   top: 0;
   max-height: 100vh;
-  width: 10%;
-  background-color: rgb(31, 31, 32);
+  width: 20%;
+  background-color: #030303;
   color: #FAF9F6;
+  padding-top: 3rem;
 }
 .side-bar-wraper .side-bar h3 {
   padding: 0.7rem 2rem;
 }
+.side-bar-wraper .side-bar .side-bar-chars {
+  display: block;
+  padding-left: 3rem;
+  padding-top: 0.5rem;
+  font-size: 1.8rem;
+}
 .side-bar-wraper .side-bar-content {
   height: 100%;
-  width: 90%;
+  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,10 +16,10 @@
                    <div class="div-divider">
                         <nav class="hero-nav">
                             <ul>
-                                <li>Home</li>
-                                <li>About</li>
-                                <li>Project</li>
-                                <li>Contact</li>
+                                <li><a href="#hero-page">Home</a></li>
+                                <li><a href="#about-page">About</a></li>
+                                <li><a href="#projectPage">Project</a></li>
+                                <li><a href="#contact-page">Contact</a></li>
                                 <li><button id="#Click"></button></li>
                             </ul>
                         </nav>
@@ -31,26 +31,71 @@
             </section>
             <div class="side-bar-wraper">
                 <header class="side-bar">
-                    <h1>
-                        Leo Malhi
-                    </h1>
-                    <h3>P</h3>
-                    <div id="print"> OK </div>
+                    <h1>Leo Malhi</h1>
+                    <div id="print"></div>
                 </header>
                 <div class="side-bar-content">
-                    <section id="about-page" class="scroll-item">
+                    <section id="about-page" class="scroll-item" data-name="ABOUT US">
                        <div class="container">
-                         <div class="row justify-content-end">
-                            <div class="col-6 about-content-text">
-                                <h4>About Me</h4>
-                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids 
-                                    are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of y a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+                         <div class="about-container">
+                            <div class="row justify-content-end">
+                                <div class="col-6 about-content-img">
+                                    <img src="image/dark-background1.jpg" alt="">
+                                </div>
+                                <div class="col-6 about-content-text">
+                                    <h4 class="title">About Me</h4>
+                                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids 
+                                        are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of y a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+                                </div>
                             </div>
-                        </div>
+                         </div>
                        </div>
                     </section>
-                    <section id="projectPage" class="scroll-item">
+                    <section id="expertisePage" class="scroll-item" data-name="SKILLS">
+                        <div class="expertise-container">
+                            <!-- <h2 class="title">My Experices</h2> -->
+                            <div class="expertise-box-container">
+                               <div class="row justify-content-center">
+                                    <div class="col-3 expertise-box">
+                                        <h3>Programming</h3>
+                                        <div class="expertise-box-text">
+                                            <span>&lt;h1&gt; </span>
+                                            <p>write abou the programming specicife to me and 
+                                                what i have leant from it and can the concepts I have 
+                                                learnt and mastered. 
+                                            </p>
+                                            <span>&lt;h1&gt; </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 expertise-box">
+                                        <h3>Data Science</h3>
+                                        <div class="expertise-box-text">
+                                            <span>&lt;h1&gt; </span>
+                                            <p>write abou the programming specicife to me and 
+                                                what i have leant from it and can the concepts I have 
+                                                learnt and mastered. 
+                                            </p>
+                                            <span>&lt;h1&gt; </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 expertise-box">
+                                        <h3>Web Development</h3>
+                                        <div class="expertise-box-text">
+                                            <span>&lt;h1&gt; </span>
+                                            <p>write abou the programming specicife to me and 
+                                                what i have leant from it and can the concepts I have 
+                                                learnt and mastered. 
+                                            </p>
+                                            <span>&lt;h1&gt; </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="projectPage" class="scroll-item" data-name="PROJECT">
                        <div class="project-section">
+                        <!-- <h2>My Project</h2> -->
                         <button class="next-project-btn" id="slideRight"><i class="fa-solid fa-arrow-right"></i></button>
                         <button class="next-project-btn" id="slideLeft"><i class="fa-solid fa-arrow-left"></i></button>
                         <div class="project-wrapper" id="project-scroll">
@@ -101,8 +146,12 @@
                         
                        </div>
                     </section>
-                    <section id="contact-page" class="scroll-item">
-                    
+                    <section id="contact-page" class="scroll-item" data-name="CONTACT">
+                    <h2>Avaliable for Freelance oppournity</h2>
+                    <p>Have an excting project in mind??</p>
+                    <p>Send me an email.</p>
+
+                    <p>email: me@leomalhi.com</p>
                     </section>
                 </div>
             </div>
