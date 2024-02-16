@@ -22,18 +22,18 @@ window.addEventListener('DOMContentLoaded', function(e){
     scrollButtonRight.onclick = function () {
         console.log( "width for project-section " + projectSectionOffsetWidth + " offsetWidth" + widthofSet + " project-scroll " + document.getElementById('project-scroll').scrollLeft);
 
-        if(document.getElementById('project-scroll').scrollLeft == projectSectionOffsetWidth){
-            // remove the right button
-            document.querySelector('#slideRight').style.display = 'none';
-        }
-        if(document.getElementById('project-scroll').scrollLeft > widthofSet){
-            // add the left button 
-            document.querySelector('#slideLeft').style.display = 'inline';
-        }
-        if(document.getElementById('project-scroll').scrollLeft == 0){
-            // remove the left button 
-            document.querySelector('#slideLeft').style.display = 'none';
-        }   
+        // if(document.getElementById('project-scroll').scrollLeft == projectSectionOffsetWidth){
+        //     // remove the right button
+        //     document.querySelector('#slideRight').style.display = 'none';
+        // }
+        // if(document.getElementById('project-scroll').scrollLeft > widthofSet){
+        //     // add the left button 
+        //     document.querySelector('#slideLeft').style.display = 'inline';
+        // }
+        // if(document.getElementById('project-scroll').scrollLeft == 0){
+        //     // remove the left button 
+        //     document.querySelector('#slideLeft').style.display = 'none';
+        // }   
       document.getElementById('project-scroll').scrollLeft += widthofSet /2;
     };
 
