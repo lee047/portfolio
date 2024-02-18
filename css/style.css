@@ -261,7 +261,19 @@ html a, body a {
 
 #contact-page {
   width: 100%;
-  height: 60vh;
+  height: 80vh;
+}
+#contact-page .contact-text {
+  margin: 1rem;
+}
+#contact-page .contact-image {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  background-color: #8210f5;
+}
+#contact-page .contact-image img {
+  margin-left: 10%;
 }
 
 .side-bar-wraper {
