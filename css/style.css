@@ -113,7 +113,6 @@ html a, body a {
 }
 #about-page .about-container .about-content-img img {
   max-width: 600px;
-  filter: blur(1px);
 }
 #about-page .back-img {
   background-image: url("../image/background2.jpg");
@@ -223,7 +222,7 @@ html a, body a {
   display: inline-block;
   margin-top: 2%;
   margin-left: 2%;
-  background-color: rgba(0, 0, 0, 0.527);
+  background-color: rgba(0, 0, 0, 0.55);
   height: 80%;
   width: 40%;
 }
@@ -237,7 +236,7 @@ html a, body a {
   top: 0;
   bottom: 0;
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  background: rgba(0, 0, 0, 0.7); /* Black see-through */
   color: #f1f1f1;
   width: 100%;
   transition: 0.5s ease;
@@ -249,8 +248,8 @@ html a, body a {
   z-index: 1;
 }
 #projectPage .project-section .project-wrapper .project-container .overlay-project:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-  box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 7px 9px 1px rgba(248, 245, 245, 0.46);
 }
 #projectPage .left-container {
   margin-top: 1rem;
@@ -317,6 +316,37 @@ html a, body a {
 .side-bar-wraper .side-bar-content {
   height: 100%;
   width: 92%;
+}
+
+@media (min-width: 576px) {
+  #hero-page .hero-page-contianer .hero-content .name-container h1 {
+    font-size: 7rem;
+  }
+  #about-page .about-container .about-content-img img {
+    max-width: 500px;
+  }
+  #about-page .about-container .about-content-text {
+    margin-left: 2rem;
+  }
+  #expertisePage {
+    margin-top: 30%;
+  }
+  #projectPage {
+    margin-top: 35%;
+  }
+  #projectPage .project-section .project-wrapper .project-container {
+    height: 300px;
+    width: 300px;
+  }
+  #contact-page .contact-image {
+    padding-left: 3rem;
+  }
+  #contact-page .contact-image img {
+    max-width: 280px;
+  }
+  .side-bar {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

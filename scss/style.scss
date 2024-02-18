@@ -182,7 +182,7 @@ html , body {
             margin-top: 4%;
             img{
                 max-width: 600px;
-                filter: blur(1px);
+                // filter: blur(1px);
             }
         }
         
@@ -315,7 +315,7 @@ html , body {
                 display: inline-block;
                 margin-top: 2%;
                 margin-left: 2%;
-                background-color: rgba(0, 0, 0, 0.527); 
+                background-color: rgba(0, 0, 0, 0.55); 
                 height: 80%; 
                 width: 40%;
                 img {
@@ -331,7 +331,7 @@ html , body {
                     top: 0; 
                     bottom: 0;
                     background: rgb(0, 0, 0);
-                    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+                    background: rgba(0, 0, 0, 0.7); /* Black see-through */
                     color: #f1f1f1; 
                     width: 100%;
                     transition: .5s ease;   
@@ -344,8 +344,8 @@ html , body {
                   }
 
                 .overlay-project:hover{
-                    background-color: rgba(0, 0, 0, 0.6);
-                    box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.4);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    box-shadow: 3px 7px 9px 1px rgb(248 245 245 / 46%);
                 }  
              }
         }
@@ -438,6 +438,59 @@ html , body {
 // media queries 
 
 @media (min-width: 576px) {
+    #hero-page{
+        .hero-page-contianer{
+           .hero-content{
+            
+            .name-container{
+                h1{
+                    font-size: 7rem;
+                }
+            }
+           }
+        }
+    }
+
+    #about-page{
+        .about-container{
+            .about-content-img{
+              img{
+                max-width: 500px;
+              }
+            }
+            .about-content-text{
+                margin-left: 2rem;
+            }
+        }
+    }
+    #expertisePage{
+        margin-top: 30%;
+    }
+
+    #projectPage{
+        margin-top: 35%;
+        .project-section{
+            .project-wrapper{
+                .project-container{
+                    height: 300px;
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    #contact-page{
+        .contact-image{
+            padding-left: 3rem;
+            img{
+                max-width: 280px;
+            }
+        }
+    }
+
+    .side-bar{
+        display: none;
+    }
 
  }
 
