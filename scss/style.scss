@@ -365,9 +365,22 @@ html , body {
 
 #contact-page{
     width: 100%;
-    height: 80vh;
+    height: 75vh;
+    .container{
+        overflow-x: hidden;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
     .contact-text{
         margin: 1rem;
+        padding-top: 2rem;
+        a {
+            color:$purple-color;
+            text-decoration: none;
+        }
+        a:hover{
+            font-size: 1.1rem;
+        }
     }
     .contact-image{
         width: 100%;
