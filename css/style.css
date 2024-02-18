@@ -73,6 +73,7 @@ html a, body a {
 }
 #hero-page .hero-page-contianer .hero-content .name-container h3 {
   padding: 2rem;
+  color: #8210f5;
 }
 #hero-page .hero-page-contianer .hero-nav ul {
   display: flex;
@@ -81,7 +82,7 @@ html a, body a {
   justify-content: center;
   width: 100%;
   height: 10%;
-  background-color: rgba(3, 3, 3, 0.7);
+  background-color: rgba(3, 3, 3, 0.9);
   color: #FAF9F6;
   margin-bottom: 0px;
 }
@@ -90,16 +91,17 @@ html a, body a {
   padding-right: 5%;
 }
 #hero-page .hero-page-contianer .hero-nav ul li a {
-  color: #ffffff;
+  color: #8210f5;
 }
 #hero-page .hero-page-contianer .hero-nav ul li a:hover {
   font-size: 2rem;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #8210f5;
 }
 
 #about-page {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
+  z-index: 10;
 }
 #about-page .about-container .about-content-text {
   margin-top: 4%;
@@ -120,13 +122,24 @@ html a, body a {
 
 #expertisePage {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
 }
 #expertisePage .expertise-container {
   padding: 3%;
 }
 #expertisePage .expertise-container .expertise-box-container {
   padding: 3%;
+}
+#expertisePage .expertise-container .expertise-box-container .img-layer {
+  margin-top: -50px;
+  width: 100%;
+  height: 500px;
+  background-image: url("../image/code.png");
+}
+#expertisePage .expertise-container .expertise-box-container .img-layer .inner-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 #expertisePage .expertise-container .expertise-box-container .expertise-box {
   border: 1px solid #8210f5;
@@ -271,6 +284,7 @@ html a, body a {
   padding: 0.7rem 2rem;
 }
 .side-bar-wraper .side-bar .side-bar-chars {
+  color: #8210f5;
   display: block;
   padding-left: 3rem;
   padding-top: 0.5rem;
