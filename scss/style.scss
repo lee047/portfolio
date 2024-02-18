@@ -388,6 +388,7 @@ html , body {
         background-color: $purple-color;
         img{
             margin-left: 10%;
+            height: 100%;
         }
     }
 }
@@ -437,7 +438,7 @@ html , body {
 
 // media queries 
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     #hero-page{
         .hero-page-contianer{
            .hero-content{
@@ -495,9 +496,68 @@ html , body {
  }
 
 // media queries 
-
+// 959
 @media only screen and (min-width: 576px) and (max-width: 959px){
-    .container{
+    #about-page{
+        .container{
+            margin: 0px;
+            padding: 0px;
+            margin-left: 1rem;
+            .row{
+                margin: 0px;
+            padding: 0px;
+            }
+        }
+        .about-content-img{
+            padding-top: 10%;
+            margin-left: -10px;
+            img{
+                height: 300px;
+            }
+        }
+        .about-content-text{
+            padding: 3%;
+        }
+    }
 
+    #expertisePage{
+        margin-bottom: 15%;
     }
+
+    #projectPage{
+        margin-top: 10%;
+        .project-section{
+            .project-wrapper{
+                .project-container{
+                    height: 400px;
+                    width: 380px;
+                }
+            }
+        }   
     }
+
+    #contact-page{
+      .container{
+        margin-left:1rem; 
+        .contact-text{
+            
+        }
+        .contact-image{
+           width: 100%;
+            img{
+                max-width: 400px;
+            }
+        }
+      }
+    }  
+    }
+    
+// 1200
+    @media only screen and (min-width: 959px) and (max-width: 1210px){
+       #contact-page{
+        height: 85vh;
+        .contact-image{
+            height: 90%;
+        }
+       }
+        }    

@@ -285,6 +285,7 @@ html a, body a {
 }
 #contact-page .contact-image img {
   margin-left: 10%;
+  height: 100%;
 }
 
 .side-bar-wraper {
@@ -318,7 +319,7 @@ html a, body a {
   width: 92%;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   #hero-page .hero-page-contianer .hero-content .name-container h1 {
     font-size: 7rem;
   }
@@ -346,6 +347,54 @@ html a, body a {
   }
   .side-bar {
     display: none;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 959px) {
+  #about-page .container {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 1rem;
+  }
+  #about-page .container .row {
+    margin: 0px;
+    padding: 0px;
+  }
+  #about-page .about-content-img {
+    padding-top: 10%;
+    margin-left: -10px;
+  }
+  #about-page .about-content-img img {
+    height: 300px;
+  }
+  #about-page .about-content-text {
+    padding: 3%;
+  }
+  #expertisePage {
+    margin-bottom: 15%;
+  }
+  #projectPage {
+    margin-top: 10%;
+  }
+  #projectPage .project-section .project-wrapper .project-container {
+    height: 400px;
+    width: 380px;
+  }
+  #contact-page .container {
+    margin-left: 1rem;
+  }
+  #contact-page .container .contact-image {
+    width: 100%;
+  }
+  #contact-page .container .contact-image img {
+    max-width: 400px;
+  }
+}
+@media only screen and (min-width: 959px) and (max-width: 1210px) {
+  #contact-page {
+    height: 85vh;
+  }
+  #contact-page .contact-image {
+    height: 90%;
   }
 }
 
