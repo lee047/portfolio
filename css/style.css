@@ -91,10 +91,12 @@ html a, body a {
   padding-right: 5%;
 }
 #hero-page .hero-page-contianer .hero-nav ul li a {
+  display: block;
   color: #8210f5;
 }
 #hero-page .hero-page-contianer .hero-nav ul li a:hover {
-  font-size: 2rem;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
   border-bottom: 2px solid #8210f5;
 }
 

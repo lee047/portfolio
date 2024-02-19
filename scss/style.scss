@@ -147,12 +147,14 @@ html , body {
                 font-size: 1.5rem;
                 padding-right: 5%;
                 a{
+                    display: block;
                     color: $purple-color;
-                    
+                   
                 }
 
                 a:hover{
-                    font-size: 2rem;
+                    transform: scale(1.2);
+                    -webkit-transform:scale(1.2);
                     border-bottom: 2px solid $purple-color;
                     // box-shadow: 0px 2px 10px 2px white;
                 }
