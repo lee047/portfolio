@@ -203,7 +203,7 @@ html a, body a {
 }
 #projectPage .project-section #slideRight:hover, #projectPage .project-section #slideLeft:hover {
   border: 1px solid #f1f1f1;
-  background-color: rgba(3, 3, 3, 0.9);
+  background-color: #8210f5;
   box-shadow: 0 0 5px 1px white;
   font-size: 1.3rem;
   opacity: 1;
