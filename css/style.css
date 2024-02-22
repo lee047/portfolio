@@ -115,12 +115,21 @@ html a, body a {
 }
 #about-page .about-container .about-content-img img {
   max-width: 600px;
+  animation: rotation 120s infinite linear;
 }
 #about-page .back-img {
   background-image: url("../image/background2.jpg");
   width: 500px;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #expertisePage {
   width: 100%;
   height: 80vh;

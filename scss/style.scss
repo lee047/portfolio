@@ -185,6 +185,7 @@ html , body {
             img{
                 max-width: 600px;
                 // filter: blur(1px);
+                animation: rotation 120s infinite linear;
             }
         }
         
@@ -196,6 +197,20 @@ html , body {
     }
     
 } 
+
+// animation for about us 
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
 
 
 #expertisePage {
